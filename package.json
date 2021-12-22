@@ -5,6 +5,7 @@
     "main": "dist/app.js",
     "scripts": {
         "build": "tsc",
+        "migrate": "node dist/bin/migrate.js",
         "start": "node dist/app.js"
     },
     "author": "",
@@ -14,7 +15,9 @@
         "cors": "^2.8.5",
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "express-fileupload": "^1.2.1"
+        "express-fileupload": "^1.2.1",
+        "pg": "^8.6.0",
+        "postgres-migrations": "^5.1.1"
     },
     "devDependencies": {
         "@types/cors": "^2.8.10",
